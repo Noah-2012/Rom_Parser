@@ -63,7 +63,7 @@ pip install subprocess
 
 ### mGBA Pfad
 
-- Es ist wichtig das sie den richtigen Pfad in den python dateien angeben. Nicht meinen.
+- Es ist wichtig das sie den richtigen Pfad in den python dateien angeben.
 - Das sollte so aussehen:
 ```Python
 mgba_path = 'c:\\Program Files\\mGBA\\mGBA.exe'
