@@ -1,12 +1,12 @@
 # Rom Parser
 
-Eine kleine Bibliothek zum parsen von Roms.
+A small library for parsing roms.
 
-- Die Batch files sind unnützlich. Sie kommen aus der alpha.
+- The batch files are useless. They come from the alpha.
 
----
+--
 
-### Es ist wichtig diese Pakete für python vorher zu installieren: *argparse*, *rich*, *os* and *subprocess*.
+### It is important to install these packages for python beforehand: *argparse*, *rich*, *os* and *subprocess*.
 
 - Argparse
 ```bash
@@ -30,41 +30,41 @@ pip install subprocess
 
 ---
 
-### Das benutzen ist sehr simpel.
+### Using it is very simple.
 
-- Sie müssen ein terminal im jeweiligen Verzeichnis (z. B. GB, GBA, GBC) öffnen.
-  - Geben sie dann ein:
-    ```bash
-    make read_rom <datei>
-    ```
-  - Nun werden ihnen viele Informationen angezeigt über das Rom.
+- You need to open a terminal in the respective directory (e.g. GB, GBA, GBC).
+- Then enter:
+```bash
+make read_rom <file>
+```
+- Now you will see a lot of information about the ROM.
+
+--
+
+### Subfunctions
+
+- You now have an input that looks like this:
+```bash
+What do you want to do?
+[1] Display the entire ROM content
+[2] Create a HEX file
+[3] Display a specific address
+[4] Start the game in mGBA
+[5] Exit
+Please enter your selection (1/2/3/4/5):
+```
+- Function 1 prints the entire content of the ROM in hex and ascii.
+- Function 2 does the same as function one, except that it exports the entire ROM content to a hex file.
+- Function 3 lets you display the content of a specific address (hex and ascii).
+- Function 4 starts the ROM in mGBA. Please install it first if you want.
+- Function 5 ends the script.
 
 ---
 
-### Unterfunktionen
+### mGBA path
 
-- Sie haben jetzt ein input der so aussieht:
-  ```bash
-  Was möchten Sie tun?
-  [1] Kompletter ROM-Inhalt anzeigen
-  [2] HEX-Datei erstellen
-  [3] Bestimmte Adresse anzeigen
-  [4] Spiel in mGBA starten
-  [5] Beenden
-  Bitte Auswahl eingeben (1/2/3/4/5):
-  ```
-  - Die Funktion 1 printet ihnen den gesamten Inhalt des Roms in hex und ascii.
-  - Die Funktion 2 macht das gleiche wie Funktion eins nur das er den gesamten Rom Inhalt in eine hex-Datei exportiert.
-  - Bei Funktion 3 können sie sich den Inhalt einer bestimmten Adresse anzeigen lassen (Hex und Ascii).
-  - Die Funktion 4 startet das Rom in mGBA. Bitte vorher auch installieren falls sie wollen.
-  - Die Funktion 5 beendet das Script.
- 
----
-
-### mGBA Pfad
-
-- Es ist wichtig das sie den richtigen Pfad in den python dateien angeben.
-- Das sollte so aussehen:
+- It is important that you specify the correct path in the python files.
+- It should look like this:
 ```Python
 mgba_path = 'c:\\Program Files\\mGBA\\mGBA.exe'
 ```
