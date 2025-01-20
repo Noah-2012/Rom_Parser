@@ -44,6 +44,7 @@ make read_rom <file>
 ### Subfunctions
 
 - You now have an input that looks like this:
+
   ```bash
   What do you want to do?
   [1] Display the entire ROM content
