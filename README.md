@@ -42,7 +42,7 @@ make read_rom <file>
 ### Important:
 
 - In the GB, GBA, GBC folder the following file extensions are supported: `.gb, .gba and .gbc`.
-- In the NES, SNES folder the following file extensions are supported (beta): NES: .nes, .fds and .unf and SNES: `.sfc, .smc, .fig, .bs and .st`.
+- In the NES, SNES folder the following file extensions are supported (beta): NES: `.nes, .fds and .unf` and SNES: `.sfc, .smc, .fig, .bs and .st`.
 
 ---
 
